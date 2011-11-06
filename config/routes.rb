@@ -1,5 +1,6 @@
 SiteProject::Application.routes.draw do
   get "blog/home"
+    root :to => 'blog#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
