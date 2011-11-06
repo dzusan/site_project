@@ -1,17 +1,8 @@
 <nav>
 
-  <a href="#" class="menu">
-    <div class="item">Электроника</div>
-  </a>
-  <a href="#" class="menu">
-    <div class="item">Программирование</div>
-  </a>
-  <a href="#" class="menu">
-    <div class="item">*nix</div>
-  </a>
-  <a href="#" class="menu">
-    <div class="item">Про жизнь</div>
-  </a>
-
+  <%= link_to "Электроника",      electro_path, :class => "item" %>
+  <%= link_to "Программирование", prog_path,    :class => "item" %>
+  <%= link_to "*nix",             nix_path,     :class => "item" %>
+  <%= link_to "Про жизнь",        other_path,   :class => "item" %>
 
 </nav>

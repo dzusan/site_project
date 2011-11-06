@@ -1,6 +1,16 @@
 SiteProject::Application.routes.draw do
+  get "users/new"
+
+    match '/signup',  :to => 'users#new'
+
   get "blog/home"
-    root :to => 'blog#home'
+
+    match '/electro', :to => 'blog#electro'
+    match '/prog',    :to => 'blog#prog'
+    match '/nix',     :to => 'blog#nix'
+    match '/other',   :to => 'blog#other'
+
+    root              :to => 'blog#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
