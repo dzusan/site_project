@@ -14,6 +14,9 @@
 
     <div class="middle">
       <section class="board">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
         <%= yield %>
       </section>
       <section class="menu">
